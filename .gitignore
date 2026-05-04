@@ -73,3 +73,18 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# === Claude Code Game Studios ===
+CLAUDE.local.md
+production/session-logs/
+expansions/
+docs/consistency-failures.md
+
+# === Secrets ===
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+credentials.json
+secrets.json
