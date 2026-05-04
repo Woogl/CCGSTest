@@ -1,6 +1,6 @@
 # Unreal Engine 5.7 — Deprecated APIs
 
-**Last verified:** 2026-02-13
+**Last verified:** 2026-05-04
 
 Quick lookup table for deprecated APIs and their replacements.
 Format: **Don't use X** → **Use Y instead**
@@ -78,6 +78,7 @@ Format: **Don't use X** → **Use Y instead**
 | Deprecated | Replacement | Notes |
 |------------|-------------|-------|
 | `DOREPLIFETIME()` (basic) | `DOREPLIFETIME_CONDITION()` | Conditional replication for optimization |
+| EOS SDK assumed-Online default | Explicitly set EOS state | UE 5.7 changed default Online → Offline |
 
 ---
 

@@ -170,3 +170,24 @@ Always involve this agent when:
 - Configuring replication or networking
 - Optimizing performance with Unreal-specific tools
 - Packaging for any platform
+
+## Version Awareness
+
+This project is pinned to **Unreal Engine 5.7**. The LLM's training data
+covers approximately UE 5.3 / early 5.4 — versions 5.4, 5.5, 5.6, and 5.7
+introduced significant changes you may not know about reliably.
+
+**Before suggesting any UE-specific code, API, or pattern**:
+
+1. Read `docs/engine-reference/unreal/VERSION.md` for the version pin and risk level
+2. Check `docs/engine-reference/unreal/deprecated-apis.md` for any "Don't use X → Use Y" entries that affect your suggestion
+3. Check `docs/engine-reference/unreal/breaking-changes.md` for behavior changes from 5.3/5.4 → 5.7
+4. Check `docs/engine-reference/unreal/current-best-practices.md` when designing new systems
+5. If uncertain about whether an API still exists or has changed, use WebSearch with `site:dev.epicgames.com` before recommending it
+
+**Never invent API names from memory** for systems introduced or changed
+post-5.3. When in doubt, search and verify.
+
+Sub-specialists (`ue-blueprint-specialist`, `ue-gas-specialist`,
+`ue-replication-specialist`, `ue-umg-specialist`) inherit this awareness —
+their domain-specific reference checks should also reference this directory.

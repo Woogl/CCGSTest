@@ -6,7 +6,8 @@
       "Bash(git clone *)",
       "PowerShell(Get-ChildItem *)",
       "PowerShell(Copy-Item *)",
-      "PowerShell(\"=== root ===\"; Get-ChildItem -Force C:\\\\CCGSTest | Format-Table Mode, Name -AutoSize | Out-String; \"=== .claude ===\"; Get-ChildItem -Force C:\\\\CCGSTest\\\\.claude | Format-Table Mode, Name -AutoSize | Out-String; \"=== counts ===\"; \"agents: \" + \\(Get-ChildItem -Recurse -File C:\\\\CCGSTest\\\\.claude\\\\agents | Measure-Object\\).Count; \"skills: \" + \\(Get-ChildItem -Recurse -File C:\\\\CCGSTest\\\\.claude\\\\skills | Measure-Object\\).Count; \"hooks: \" + \\(Get-ChildItem -Recurse -File C:\\\\CCGSTest\\\\.claude\\\\hooks | Measure-Object\\).Count; \"rules: \" + \\(Get-ChildItem -Recurse -File C:\\\\CCGSTest\\\\.claude\\\\rules | Measure-Object\\).Count)"
+      "PowerShell(\"=== root ===\"; Get-ChildItem -Force C:\\\\CCGSTest | Format-Table Mode, Name -AutoSize | Out-String; \"=== .claude ===\"; Get-ChildItem -Force C:\\\\CCGSTest\\\\.claude | Format-Table Mode, Name -AutoSize | Out-String; \"=== counts ===\"; \"agents: \" + \\(Get-ChildItem -Recurse -File C:\\\\CCGSTest\\\\.claude\\\\agents | Measure-Object\\).Count; \"skills: \" + \\(Get-ChildItem -Recurse -File C:\\\\CCGSTest\\\\.claude\\\\skills | Measure-Object\\).Count; \"hooks: \" + \\(Get-ChildItem -Recurse -File C:\\\\CCGSTest\\\\.claude\\\\hooks | Measure-Object\\).Count; \"rules: \" + \\(Get-ChildItem -Recurse -File C:\\\\CCGSTest\\\\.claude\\\\rules | Measure-Object\\).Count)",
+      "PowerShell(New-Item *)"
     ]
   }
 }

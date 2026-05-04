@@ -1,6 +1,6 @@
 # Unreal Engine 5.7 — Current Best Practices
 
-**Last verified:** 2026-02-13
+**Last verified:** 2026-05-04
 
 Modern UE5 patterns that may not be in the LLM's training data.
 These are production-ready recommendations as of UE 5.7.

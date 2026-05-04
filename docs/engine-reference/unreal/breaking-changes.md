@@ -1,11 +1,37 @@
 # Unreal Engine 5.7 — Breaking Changes
 
-**Last verified:** 2026-02-13
+**Last verified:** 2026-05-04
 
 This document tracks breaking API changes and behavioral differences between Unreal Engine 5.3
 (likely in model training) and Unreal Engine 5.7 (current version). Organized by risk level.
 
 ## HIGH RISK — Will Break Existing Code
+
+### EOS SDK Default State: Online → Offline (5.7)
+**Versions:** UE 5.7+
+
+Epic Online Services SDK default state changed from `Online` to `Offline`.
+
+```cpp
+// ❌ OLD: Assumed Online default
+// Code paths that didn't explicitly set state would default to Online
+
+// ✅ NEW: Must explicitly set Online state if needed
+// Check Epic's EOS SDK migration guide for project-specific calls
+```
+
+**Affects EXTRACT:** None for MVP (no online services). Future-relevant if Steam/EOS achievements added.
+
+---
+
+### Linux Platform: SDL2 → SDL3 (5.7)
+**Versions:** UE 5.7+
+
+Linux build now uses SDL3. Custom SDL2 patches must be ported.
+
+**Affects EXTRACT:** None — EXTRACT targets PC (Windows DX12).
+
+---
 
 ### Substrate Material System (Production-Ready in 5.7)
 **Versions:** UE 5.5+ (experimental), 5.7 (production-ready)

@@ -3,10 +3,11 @@
 | Field | Value |
 |-------|-------|
 | **Engine Version** | Unreal Engine 5.7 |
-| **Release Date** | November 2025 |
-| **Project Pinned** | 2026-02-13 |
-| **Last Docs Verified** | 2026-02-13 |
-| **LLM Knowledge Cutoff** | May 2025 |
+| **Release Date** | December 2025 |
+| **Project Pinned** | 2026-05-04 |
+| **Last Docs Verified** | 2026-05-04 |
+| **LLM Knowledge Cutoff** | January 2026 (approximate) |
+| **Risk Level** | HIGH — multiple post-cutoff versions |
 
 ## Knowledge Gap Warning
 
@@ -18,10 +19,16 @@ Always cross-reference this directory before suggesting Unreal API calls.
 
 | Version | Release | Risk Level | Key Theme |
 |---------|---------|------------|-----------|
-| 5.4 | ~Mid 2025 | HIGH | Motion Design tools, animation improvements, PCG enhancements |
-| 5.5 | ~Sep 2025 | HIGH | Megalights (millions of lights), animation authoring, MegaCity demo |
-| 5.6 | ~Oct 2025 | MEDIUM | Performance optimizations, bug fixes |
-| 5.7 | Nov 2025 | HIGH | PCG production-ready, Substrate production-ready, AI assistant |
+| 5.4 | April 2024 | MEDIUM | Animator UI, Motion Matching, Mover prototype, rendering perf |
+| 5.5 | November 2024 | HIGH | Animation authoring overhaul, Megalights, ICVFX production, Mover beta |
+| 5.6 | June 2025 | HIGH | Open-world 60Hz, unified animation pipeline (no more nativization), new templates |
+| 5.7 | December 2025 | HIGH | Substrate/PCG production, Nanite Foliage, Linux SDL2→SDL3, EOS default Offline |
+
+## Hotfix Tracking
+
+UE 5.7 has hotfixes (5.7.1, 5.7.2, 5.7.3, 5.7.4 as of pin date). Use the
+latest hotfix for stability. Hotfix changes do not affect API surface and do
+not require this VERSION.md update.
 
 ## Major Changes from UE 5.3 to UE 5.7
 
